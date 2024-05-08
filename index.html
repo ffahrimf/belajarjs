@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Belajar JS</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="container mx-auto">
-        <h1 class="mt-5 mb-4 text-2xl" id="hello"><strong>Hello World!</strong></h1>
-        <input type="text" id="name" placeholder=" Nama Lengkap" class="mb-4 bg-gray-100"><br>
-        <button onclick="haloFunc('Mubarad')"
-            class="text-red-500 px-3 py-1 font-semibold text-white rounded-lg bg-red-500">Say Hello</button>
+      <h1 class="mt-5 mb-4 text-2xl" id="hello">
+        <strong>Hello World!</strong>
+      </h1>
+      <h1 class="mt-5 mb-4 text-2xl" id="hello">
+        <strong>Hello Earth!</strong>
+      </h1>
+      <input
+        type="text"
+        id="name"
+        placeholder=" Nama Lengkap"
+        class="mb-4 bg-gray-100"
+      /><br />
+      <button
+        onclick="haloFunc('Mubarad')"
+        class="text-red-500 px-3 py-1 font-semibold text-white rounded-lg bg-red-500"
+      >
+        Say Hello
+      </button>
     </section>
 
-
     <script>
-        function haloFunc() {
-            let name = document.getElementById('name').value;
+      function haloFunc() {
+        let name = document.getElementById("name").value;
 
-            document.getElementById('hello').innerText = name;
-            document.getElementById('hello').style.color = 'red';
+        document.getElementById("hello").innerText = name;
+        document.getElementById("hello").style.color = "red";
 
-            alert(`Halo ${name}!`);
-            console.log('printed.');
-        }
+        alert(`Halo ${name}!`);
+        console.log("printed.");
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
